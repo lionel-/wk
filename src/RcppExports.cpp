@@ -412,6 +412,8 @@ BEGIN_RCPP
 END_RCPP
 }
 
+RcppExport SEXP C_testPoint();
+
 static const R_CallMethodDef CallEntries[] = {
     {"_wk_cpp_coords_wkb", (DL_FUNC) &_wk_cpp_coords_wkb, 1},
     {"_wk_cpp_coords_wkt", (DL_FUNC) &_wk_cpp_coords_wkt, 1},
@@ -445,6 +447,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_wk_cpp_translate_wksxp_wkt", (DL_FUNC) &_wk_cpp_translate_wksxp_wkt, 6},
     {"_wk_cpp_translate_wksxp_wkb", (DL_FUNC) &_wk_cpp_translate_wksxp_wkb, 6},
     {"_wk_cpp_translate_wksxp_wksxp", (DL_FUNC) &_wk_cpp_translate_wksxp_wksxp, 4},
+    {"C_testPoint", (DL_FUNC) &C_testPoint, 0},
     {NULL, NULL, 0}
 };
 
